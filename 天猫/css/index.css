@@ -52,3 +52,15 @@
     right:5px;
     top:16px;
 }
+.header-info .main-menu:hover{
+    background: #FFf;
+    border: solid #f2f2f2;
+}
+.header-info .main-menu:hover > a{
+    color: #FF0036;
+}
+.header-info .main-menu:hover .arrow{
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+    transform-origin: 100% 0;
+}
