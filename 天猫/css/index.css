@@ -48,6 +48,9 @@
     right:5px;
     top:16px;
 }
+.header-info .main-menu{
+    border:1px solid #f63a00;
+}
 .header-info .main-menu:hover{
     background: #FFf;
     border:1px solid #f2f2f2;
@@ -107,6 +110,7 @@
     border: none;
     outline: none;
     float: left;
+    text-indent:10px;
 }
 .search-box  .search button{
     height: 40px;
@@ -118,6 +122,23 @@
     color: #fff;
     font-size: 18px;
     float: left;
-    font-weight: 700;
 }
-
+.nav li{
+    height: 36px;
+    float: left;
+    line-height: 35px;
+}
+.nav li:first-child{
+    margin-left:200px;
+}
+.nav img{
+    width: 100px;
+    height: 30px;
+    margin: 3px 0 0;
+}
+.nav a{
+    color:#333;
+    font-size: 16px;
+    font-family: "Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;
+    padding: 0 8px;;
+}
