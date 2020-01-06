@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../天猫/css/common.css">
     <link rel="stylesheet" href="../天猫/css/index.css">
+    <link rel="stylesheet" href="../天猫/font/iconfont.css">
 </head>
 <body>
     <div class="banner">
@@ -21,37 +22,48 @@
                 <a href="#">请登录</a>
                 <a href="#">免费注册</a>
             </div>
-            <!-- <div class="header-info">
-                 <a href="#">我的淘宝</a>
-                 <a href="#">购物车</a>
-                 <a href="#">收藏夹</a>
-                 <span>|</span>
-                 <a href="#">手机版</a>
-                 <a href="#">淘宝网</a>
-                 <a href="#">商家支持</a>
-                 <a href="#">网站导航</a>
-            </div> -->
             <ul class="header-info">
                 <li class="main-menu"><a href="">我的淘宝</a>
                    <div class="arrow"></div> 
+                   <ul class="sub-menu">
+                       <li><a href="">已买到的宝贝</a></li>
+                       <li><a href="">已卖出的宝贝</a></li>
+                   </ul>
                 </li>
-                <li><a href="">购物车</a></li>
+                <li class="menu-hover"><a href=""><span class="iconfont icon-gouwucheman
+                    "></span>购物车</a></li>
                 <li class="main-menu"><a href="">收藏夹</a>
                     <div class="arrow"></div> 
+                    <ul class="sub-menu">
+                        <li><a href="">收藏的宝贝</a></li>
+                        <li><a href="">收藏的店铺</a></li>
+                    </ul>
                 </li>
                 <li><span>|</span></li>
-                <li><a href="">手机版</a></li>
-                <li><a href="">淘宝网</a></li>
+                <li class="menu-hover"><a href=""><span class="iconfont icon-shouji
+                    "></span>手机版</a></li>
+                <li class="menu-hover"><a href="">淘宝网</a></li>
                 <li class="main-menu"><a href="">商家支持</a>
                     <div class="arrow"></div> 
                 </li>
-                <li class="main-menu"><a href="">网站导航</a>
+                <li class="main-menu"><a href=""><span class="iconfont icon-wangzhandaohang
+                    "></span>网站导航</a>
                     <div class="arrow"></div> 
                 </li>
             </ul>
         </div>
     </div>
-    <div class="subhead"></div>
+    <div class="search-box wrapper">
+        <div class="logo">
+            <a href="#">
+                <img src="../天猫/images/2.gif" alt="">
+            </a>
+        </div>
+        <div class="search">
+            <input  placeholder="搜索 天猫商品 品牌 店铺" type="text">
+            <button>搜索</button>
+        </div>
+    </div>
 
 </body>
 </html>
