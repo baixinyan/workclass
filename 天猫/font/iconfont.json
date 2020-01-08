@@ -83,6 +83,13 @@
       "unicode_decimal": 58928
     },
     {
+      "icon_id": "1421807",
+      "name": "更多",
+      "font_class": "gengduo",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
       "icon_id": "2121676",
       "name": "口红",
       "font_class": "kouhong",
