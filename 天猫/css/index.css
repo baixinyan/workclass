@@ -114,7 +114,7 @@
 }
 .search-box  .search button{
     height: 40px;
-    width: 132px;
+    width: 133px;
     background: #ff0036;
     text-align: center;
     line-height: 40px;
@@ -141,4 +141,183 @@
     font-size: 16px;
     font-family: "Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;
     padding: 0 8px;;
+}
+/* 背景图 */
+body{
+    background: url(../images/5.png) center 83px no-repeat;
+}
+.slider{
+    position: relative;
+}
+.category{
+    width: 200px;
+    position: absolute;
+    top:-32px;
+}
+.cate-title{
+    color: #DD2727;
+    background-color: #eee;
+    height: 31px;
+    font-size: 14px;
+    line-height: 32px;
+    padding-left: 20px;
+    font-family: "Microsoft YaHei";
+    font-weight: 400;
+}
+.cate-content{
+    background-color: rgba(0,0,0,.55);
+}
+.cate-content > li{
+    height: 31px;
+    line-height: 31px;
+}
+.cate-list > a{
+    color:#fff;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+}
+.cate-list > a:hover{
+    text-decoration: none;
+}
+.cate-list > a > span{
+    /* color: #fff; */
+    opacity: 0.5;
+    margin: 0 10px 0 20px;
+}
+.cate-list:hover{
+    background-color: #fff;
+}
+.cate-list:hover > a{
+    color: #e54077;
+}
+.cate-content{
+    position: relative;
+}
+.sub-category{
+    background: #fff;
+    position: absolute;
+    left:200px;
+    top:0px;
+    height: 500px;
+    width:852px;
+    display: none;
+}
+.cate-list:hover  .sub-category{
+    display: block;
+}
+.category-left{
+    width: 644px;
+    float: left;
+    /* background: #ff0000; */
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+.cate-left-title{
+    float: left;
+    width: 104px;
+    float: left;
+    color:#333;
+    font-size: 14px;
+    font-weight: 700;
+}
+.cate-left-content{
+    width:500px;
+    float: left;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 7px;
+}
+.cate-left-content a{
+    color:#666;
+    font-size: 14px;
+    margin-left:13px;
+    line-height: 22px;
+    height:22px;
+    float: left;
+}
+.category-right{
+    width:208px;
+    float:right;
+    background: #eee;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.category-right-content{
+    background: #eee;
+}
+.category-right-content a{
+    width: 50%;
+    float: left;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    box-sizing: border-box;
+}
+.category-right-content img{
+    width:100%;
+    display: block;
+}
+/* 轮播图结束 */
+/* 年货 */
+.year-good-title{
+    height: 105px;
+    text-align: center;
+    display: block;
+}
+.year-good-title img{
+    width: 300px;
+    height: 65px;
+    margin: 20px;
+}
+.year-good-list{
+    width: 610px;
+    height: 330px;
+    float: left;
+}
+.year-good-content a:hover{
+    text-decoration: none;
+}
+.page-item-first{
+    width: 250px;
+    height: 330px;
+    float: left;
+    text-align: center;
+    border-radius: 5px;
+    background: url(../images/10.png);
+}
+.page-item-title{
+    font-family: "Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;
+    font-size: 24px;
+    margin-top: 30px;
+    color: #ff520c;
+}
+.page-item-content{
+    font-family: "Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;
+    font-size: 18px;
+    margin-top: -3px;
+    color: #ff520c;
+}
+.page-item-img1{
+    width: 180px;
+    height: 180px;
+    margin: 20px 35px 0;
+}
+.page-item-second{
+    width: 350px;
+    height: 160px;
+    float: left;
+    border-radius: 5px;
+    background: url(../images/11.png);
+    box-sizing: border-box;
+    padding-left: 30px;
+    position: relative;
+    margin-left: 5px;
+}
+.page-item-second .page-item-img1{
+    position: absolute;
+    right:17px;
+    top:5px;
+    width: 130px;
+    height:130px;
+}
+.page-item-second:last-child{
+    margin-top: 10px;
 }
