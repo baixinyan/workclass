@@ -380,18 +380,19 @@ body{
     position: relative;
 }
 .brand-item img{
-    width: 122px;
-    height: 89.6px;
-    margin-top: 12px;
+    width: 90px;
+    height: 50px;
+    margin-top: 25px;
 }
 .item-mask{
     width: 122px;
     height: 108px;
-    background-color:  rgba(0,0,0,0.7);
+    background-color:  rgba(0,0,0,0.8);
     position: absolute;
     left:0px;
     top:0px;
-    display: none;
+    opacity: 0;
+    /* display: none; */
 }    
 .mask-title{
     font-family: "Microsoft YaHei",SimSun,'\5b8b\4f53',sans;
@@ -411,6 +412,121 @@ body{
     color: #FFf;
 }
 .brand-item:hover .item-mask{
-    display: block;
+    /* display: block; */
+    opacity: 0.8;
+    transition:opacity 0.3s ease;
 }
 /* 赞助墙结束 */
+/* .tm-mark{
+    height: 50px;
+    line-height: 50px;
+} */
+.mark-title img{
+    width: 214px;
+    height: 25px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.content-first{
+    float: left;
+    margin-top: -2px;   
+    position: relative;
+    text-align: center;
+}
+.content-first img{
+    width: 235px;
+    height: 618px;   
+}
+.cf-detail{
+    position: absolute;
+    width: 218px;
+    height: 64px;
+    font-family: "Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;
+    background: rgba(0,0,0,0.6);
+    color: #ffffff;
+    margin-top: 435px;
+}
+.content-first-title{
+    float: left;
+    width: 50px;
+    height: 64px;
+    font-size: 18px;
+    margin-left: 3px;
+    margin-top: 4px;
+}
+.content-first-body{
+    float: left;
+    font-size: 18px;
+    width: 128px;
+    height: 64px;
+}
+.content-first-body span{
+    width: 114px;
+    height: 24px;
+    float: left;
+    margin-top: 3px;
+}
+.cf-footer{
+    width: 235px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+}
+.cf-footer span{
+    width: 32px;
+    height: 32px;
+    font-family: "Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;
+    color: #ffffff;
+}
+.content-wrap{
+    width: 234px;
+    height: 300px;
+    border: 1px solid #ffffff;
+    float: left;
+    text-align: center;
+    margin-left: 10px;
+    background-color: #ffffff;
+    margin-bottom: 11px;
+}
+.content-wrap:hover{
+    border: 1px solid #FF0036;
+    opacity: 0.8;
+}
+.content-wrap img{
+    width: 185px;
+    height: 185px;
+    margin-top: 20px;
+}
+.wrap-body{
+    width: 135px;
+    height: 40px;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    overflow: hidden;
+    margin: 8px auto;
+    font-family: "Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;
+}
+.wrap-end{
+    font-size: 18px;
+    color: #FF0036;
+    line-height: 18px;
+    margin: 10px auto;
+    font-family: "Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;
+}
+.mark-tiaofu{
+    width: 1230px;
+    height: 90px;
+    display: block;
+    margin:0 auto;
+    background: url(../images/19.jpg) center 0;
+}
+.tmend{
+    height: 55px;
+    margin-top: 15px;
+    text-align: center;
+}
+.tmend img{
+    width: 80px;
+    height: 45px;
+}
