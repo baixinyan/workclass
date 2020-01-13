@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #wrapper {
+            width: 500px;
+            margin: 100px auto;
+        }
+
+        #header {
+            line-height: 20px;
+            width: 500px;
+            list-style: none;
+            text-align: center;
+            height: 20px;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #header li {
+            float: left;
+            width: 100px;
+            height: 20px;
+            background-color: #ccc;
+            border: 1px solid #ffff;
+            margin-right: 5px;
+        }
+
+        #header .content {
+            background-color: red;
+            color: #ffff;
+        }
+
+        #footer div{
+            width: 500px;
+            height: 350px;
+            border: 1px solid #000000;
+            padding: 0;
+            margin-top: 0;
+            display: none;
+        }
+        #footer .footer-body{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <ul id="header">
+            <li class="content">实事</li>
+            <li>娱乐</li>
+            <li>体育</li>
+        </ul>
+        <div id="footer">
+            <div class="footer-body">1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+    </div>
+    <script>
+
+        var oheader = document.getElementById("header");
+        var aLi = oheader.getElementsByTagName("Li")
+        for (var i = 0; i < aLi.length; i++) {
+            aLi[i].onclick = function () {
+                for (var j = 0; j < aLi.length; j++) {
+                    aLi[j].className = ""
+                }
+                this.className = "content"
+            }
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
