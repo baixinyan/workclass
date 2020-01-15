@@ -36,7 +36,7 @@
             color: #ffff;
         }
 
-        #footer div{
+        #footer div {
             width: 500px;
             height: 350px;
             border: 1px solid #000000;
@@ -44,7 +44,8 @@
             margin-top: 0;
             display: none;
         }
-        #footer .footer-body{
+
+        #footer .footer-body {
             display: block;
         }
     </style>
@@ -52,6 +53,7 @@
 
 <body>
     <div id="wrapper">
+        
         <ul id="header">
             <li class="content">实事</li>
             <li>娱乐</li>
@@ -66,13 +68,18 @@
     <script>
 
         var oheader = document.getElementById("header");
-        var aLi = oheader.getElementsByTagName("Li")
+        var aLi = oheader.getElementsByTagName("li");
+        var ofooter = document.getElementById("footer");
+        var aDiv = ofooter.getElementsByTagName("div");
         for (var i = 0; i < aLi.length; i++) {
+            aLi[i].index = i;
             aLi[i].onclick = function () {
                 for (var j = 0; j < aLi.length; j++) {
-                    aLi[j].className = ""
+                    aLi[j].className = "";
+                    aDiv[j].className = "";
                 }
-                this.className = "content"
+                this.className = "content";
+                aDiv[this.index].className = "footer-body";
             }
         }
 

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        #container {
+            width: 750px;
+            margin: 50px auto;
+            position: relative;
+            background: red;
+        }
+
+        .img-box li {
+            display: none;
+        }
+
+        .img-box img {
+            display: block;
+        }
+
+        .img-box .selected {
+            display: block;
+        }
+
+        .btn-box {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+
+        .btn-box li {
+            float: left;
+            width: 20px;
+            height: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            margin-right: 5px;
+            text-align: center;
+            line-height: 20px;
+            border-radius: 5px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .btn-box .active {
+            background: #ff0036;
+        }
+
+        .arrow-box {
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+        }
+
+        .arrow-box li {
+            width: 20px;
+            height: 20px;
+            float: left;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            text-align: center;
+            line-height: 20px;
+            margin-right: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <ul class="img-box">
+            <li class="selected">
+                <img src="../js/img/1.jpg" alt="">
+            </li>
+            <li>
+                <img src="../js/img/2.jpg" alt="">
+            </li>
+            <li>
+                <img src="../js/img/3.jpg" alt="">
+            </li>
+            <li>
+                <img src="../js/img/4.jpg" alt="">
+            </li>
+            <li>
+                <img src="../js/img/5.jpg" alt="">
+            </li>
+
+        </ul>
+        <ul class="btn-box">
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+        <ul class="arrow-box">
+            <li id="prew-btn">&lt;</li>
+            <li id="next-btn">&gt;</li>
+        </ul>
+
+    </div>
+    <script>
+        var container = document.getElementById("container")
+        var btnBox = document.getElementsByClassName('btn-box')[0];
+        var aBtn = btnBox.getElementsByTagName('li');
+        var imgBox = document.getElementsByClassName('img-box')[0];
+        var aImg = imgBox.getElementsByTagName('li');
+        var oNext = document.getElementById('next-btn');
+        var oPrew = document.getElementById("prew-btn");
+        var iNow = 0;
+
+
+        for (var i = 0; i < aBtn.length; i++) {
+            aBtn[i].index = i;
+            aBtn[i].onclick = function () {
+                change(this.index);
+                iNow = this.index;
+            }
+        }
+        oNext.onclick = function () {
+            iNow++;
+            if (iNow > aBtn.length - 1) {
+                iNow = 0;
+            }
+            change(iNow);
+        }
+        oPrew.onclick = function () {
+            iNow--;
+            if (iNow < 0) {
+                iNow = aBtn.length - 1
+            }
+            change(iNow);
+        }
+
+        function change(inx) {
+            for (var i = 0; i < aBtn.length; i++) {
+                aBtn[i].className = "";
+                aImg[i].className = "";
+            }
+            aBtn[iNow].className = "active";
+            aImg[iNow].className = "selected";
+        }
+        var timer = setInterval(function () {
+            oNext.onclick()
+        }, 1000)
+        container.onmouseover = function () {
+            clearInterval(timer);
+        }
+        container.onmouseout = function () {
+            timer = setInterval(function () {
+                oNext.onclick()
+            }, 1000)
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
